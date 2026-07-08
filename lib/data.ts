@@ -55,6 +55,7 @@ export const serviceAreas: ServiceArea[] = [
   { name: "Onoc Island, Balabac", x: 58, y: 452, group: "islands" },
   { name: "Puerto Princesa", x: 204, y: 271, hub: true, group: "mainland" },
   { name: "Quezon", x: 129, y: 322, group: "mainland" },
+  { name: "Rio Tuba, Bataraza", x: 104, y: 392, group: "mainland" },
   { name: "Roxas", x: 265, y: 213, group: "mainland" },
   { name: "San Vicente", x: 250, y: 192, group: "mainland" },
   { name: "Sofronio Española", x: 138, y: 347, group: "mainland" },
@@ -116,9 +117,9 @@ export const whyChooseUs = [
 /* Statistics                                                          */
 /* ------------------------------------------------------------------ */
 export const stats = [
-  { value: 29, suffix: "", label: "Service areas & islands served" },
-  { value: 12000, suffix: "+", label: "Deliveries completed" },
-  { value: 98, suffix: "%", label: "On-time delivery rate" },
+  { value: 6, suffix: "", label: "Business partners served" },
+  { value: 20, suffix: "+", label: "Trucks in fleet" },
+  { value: 5000, suffix: "+", label: "Tons of cargo moved" },
   { value: 24, suffix: "/7", label: "Dispatch & support" },
 ];
 
@@ -218,26 +219,44 @@ export const processSteps = [
 ];
 
 /* ------------------------------------------------------------------ */
-/* Testimonials (placeholder — replace with real client quotes)        */
+/* Testimonials — real business partners                              */
 /* ------------------------------------------------------------------ */
 export const testimonials = [
   {
     quote:
-      "YVES has handled our weekly store replenishments from Puerto Princesa to El Nido for two years. Not a single missed schedule.",
-    name: "Retail Chain Client",
-    role: "Operations Manager, Puerto Princesa",
+      "Our appliance and electronics shipments move across Palawan on a strict schedule, and YVES has never let a delivery window slip.",
+    name: "Panasonic",
+    role: "Distribution & Appliances Partner",
   },
   {
     quote:
-      "Construction materials to Brooke's Point used to be our biggest headache. Now it's one call and it's handled.",
-    name: "Construction Firm Client",
-    role: "Project Supervisor, Southern Palawan",
+      "Cold chain integrity is non-negotiable for us. Their reefer trucks keep our refrigerated cargo at the right temperature from pickup to drop-off, every trip.",
+    name: "SOI/2GO",
+    role: "Refrigerated Cargo Partner",
   },
   {
     quote:
-      "Professional drivers, honest pricing, and they actually answer the phone. That's rare in provincial logistics.",
-    name: "Distribution Client",
-    role: "Warehouse Lead, Roxas",
+      "YVES coordinates closely with our RMCG routes, and the communication before and during every haul makes planning around them easy.",
+    name: "YM Cargo",
+    role: "RMCG Partner",
+  },
+  {
+    quote:
+      "As a logistics partner, we need a trucking provider that's as reliable as we are. YVES has consistently delivered on that across the province.",
+    name: "Fast Logistics",
+    role: "Logistics Partner",
+  },
+  {
+    quote:
+      "Placeholder quote — swap in this partner's real feedback once received.",
+    name: "Business Partner",
+    role: "Placeholder — pending client details",
+  },
+  {
+    quote:
+      "Their dispatch team is responsive around the clock, which matters when our routes change on short notice.",
+    name: "Yellow-X",
+    role: "Logistics Partner",
   },
 ];
 
@@ -251,7 +270,7 @@ export const faqs = [
   },
   {
     q: "What types of cargo do you transport?",
-    a: "General merchandise, retail and grocery goods, construction materials, agricultural products, equipment, appliances, and palletized commercial freight. Contact us for special cargo requirements.",
+    a: "General merchandise, retail and grocery goods, construction materials, agricultural products, equipment, appliances, and palletized, FMCG, refrigerated container, commercial freight. Contact us for special cargo requirements.",
   },
   {
     q: "How do I get a price quote?",

@@ -71,7 +71,7 @@ const config: Config = {
         "pulse-ring": "pulse-ring 2.2s cubic-bezier(0.2, 0.6, 0.4, 1) infinite",
         "float-y": "float-y 6s ease-in-out infinite",
         "road-dash": "road-dash 1.2s linear infinite",
-        marquee: "marquee 34s linear infinite",
+        marquee: "marquee 68s linear infinite",
       },
     },
   },

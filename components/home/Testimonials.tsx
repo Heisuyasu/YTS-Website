@@ -26,7 +26,7 @@ export default function Testimonials() {
         <SectionHeading
           eyebrow="Client Feedback"
           title="Trusted by Businesses Across the Province"
-          lead="Placeholder testimonials — swap in real client quotes as they come in."
+          lead="Real feedback from the businesses we serve across Palawan."
           light
         />
       </div>

@@ -42,7 +42,9 @@ export default function AboutPage() {
                 national highway from Bataraza to El Nido, the coastal roads to
                 San Vicente and Roxas, and connecting routes to the island
                 municipalities of Cuyo, Agutaya, Magsaysay and Balabac Island.
-                and Calamianes group of island in Coron.
+                and Calamianes group of island in Coron with special commitment
+                to some of our own tourist destination, our pride, the Underground River, Amanpulo Island, Cuyo, and 
+                Banwa Island in Roxas, Including the Mapon island in the South, Balabac municipality.
 
               </p>
               <p>
