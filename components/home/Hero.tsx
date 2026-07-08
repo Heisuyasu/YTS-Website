@@ -143,8 +143,9 @@ export default function Hero() {
             custom={2}
             className="mt-7 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base"
           >
-            Cargo moved safely and on schedule — Puerto Princesa to Elnido, Inland, inter-island,
-            and everywhere between.
+            LOGISTICS in an Island province,
+            Reliable trucking and cargo handler,
+            Safe, on time, every time.
             
           </motion.p>
 

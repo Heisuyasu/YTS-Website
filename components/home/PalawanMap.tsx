@@ -17,6 +17,9 @@ export default function PalawanMap({
 
   return (
     <div className="relative">
+      {/* Map + tooltip share this wrapper so tooltip percentages
+          always match the SVG, regardless of the legend below */}
+      <div className="relative">
       <svg
         viewBox="0 0 470 530"
         role="img"
@@ -221,6 +224,7 @@ export default function PalawanMap({
           </div>
         </div>
       )}
+      </div>
 
       {/* Legend — floats over the map on larger screens, sits below it on mobile */}
       <div className="pointer-events-none mx-auto mt-3 flex w-fit items-center gap-4 rounded-full bg-white/80 px-4 py-2 text-[11px] font-semibold text-navy-700 shadow-soft backdrop-blur sm:absolute sm:bottom-3 sm:left-3 sm:mx-0 sm:mt-0">
