@@ -15,14 +15,11 @@ import {
   MapPin,
   PackageCheck,
   ShieldCheck,
-  Timer,
   Warehouse,
 } from "lucide-react";
 
 const trustChips = [
   { icon: ShieldCheck, label: "Safe cargo handling" },
-  { icon: Timer, label: "98% on-time rate" },
-  { icon: MapPin, label: "29 service areas" },
   { icon: Clock, label: "On-time delivery" },
   { icon: Warehouse, label: "Cross dock & warehouse management" },
   { icon: PackageCheck, label: "Special cargo handling" },
