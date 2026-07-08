@@ -11,6 +11,13 @@ html {
   scroll-padding-top: 88px;
 }
 
+/* Prevent any decorative element from causing sideways scroll on mobile */
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 body {
   @apply bg-white text-navy-900 antialiased;
 }

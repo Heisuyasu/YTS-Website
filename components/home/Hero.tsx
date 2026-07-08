@@ -116,7 +116,7 @@ export default function Hero() {
             className="mt-6 font-display text-2xl font-extrabold leading-[1.15] tracking-tight sm:text-3xl lg:text-4xl"
           >
             Reliable Logistics Services{" "}
-            <span className="relative whitespace-nowrap text-accent-400">
+            <span className="relative text-accent-400 sm:whitespace-nowrap">
               Across Palawan
               <svg
                 aria-hidden="true"
