@@ -222,8 +222,8 @@ export default function PalawanMap({
         </div>
       )}
 
-      {/* Legend */}
-      <div className="pointer-events-none absolute bottom-3 left-3 flex items-center gap-4 rounded-full bg-white/80 px-4 py-2 text-[11px] font-semibold text-navy-700 shadow-soft backdrop-blur">
+      {/* Legend — floats over the map on larger screens, sits below it on mobile */}
+      <div className="pointer-events-none mx-auto mt-3 flex w-fit items-center gap-4 rounded-full bg-white/80 px-4 py-2 text-[11px] font-semibold text-navy-700 shadow-soft backdrop-blur sm:absolute sm:bottom-3 sm:left-3 sm:mx-0 sm:mt-0">
         <span className="flex items-center gap-1.5">
           <span className="h-2.5 w-2.5 rounded-full bg-accent-500 ring-2 ring-white" />
           Service area
