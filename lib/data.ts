@@ -224,21 +224,21 @@ export const processSteps = [
 export const testimonials = [
   {
     quote:
-      "Our appliance and electronics shipments move across Palawan on a strict schedule, and YVES has never let a delivery window slip.",
+      "Our appliance shipments move across Palawan on a strict schedule, and YVES has never let a delivery window slip.",
     name: "Panasonic",
     role: "Distribution & Appliances Partner",
   },
   {
     quote:
-      "Cold chain integrity is non-negotiable for us. Their reefer trucks keep our refrigerated cargo at the right temperature from pickup to drop-off, every trip.",
+      "Cold chain integrity is non-negotiable for us. Their on time and reliable trucking services to keep our refrigerated container van at the right temperature from pick-up to drop-off, every trip.",
     name: "SOI/2GO",
     role: "Refrigerated Cargo Partner",
   },
   {
     quote:
-      "YVES coordinates closely with our RMCG routes, and the communication before and during every haul makes planning around them easy.",
+      "YVES coordinates closely with our FMCG routes, and the communication before and during every haul makes planning around them easy.",
     name: "YM Cargo",
-    role: "RMCG Partner",
+    role: "FMCG Partner",
   },
   {
     quote:
@@ -248,9 +248,9 @@ export const testimonials = [
   },
   {
     quote:
-      "Placeholder quote — swap in this partner's real feedback once received.",
-    name: "Business Partner",
-    role: "Placeholder — pending client details",
+      "Bulk cargo needs careful handling and tight coordination at the port. YVES has kept our loading and hauling schedule on track every time.",
+    name: "Parsh Marine",
+    role: "Bulk Cargo Partner",
   },
   {
     quote:

@@ -141,8 +141,8 @@ export default function Hero() {
             className="mt-7 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base"
           >
             LOGISTICS in an Island province,
-            Reliable trucking and cargo handler,
-            Safe, on time, every time.
+            reliable trucking and cargo handler,
+            safe, on time, every time.
             
           </motion.p>
 
@@ -196,11 +196,12 @@ export default function Hero() {
             <TruckIllustration />
           </div>
           {/* Floating badge cards */}
-          <div className="absolute -left-6 top-6 rounded-2xl border border-white/10 bg-white/[0.07] px-5 py-4 backdrop-blur-md">
-            <p className="font-display text-lg font-bold text-accent-400">
-              More satisfied principal and clients and counting.
+          <div className="absolute -left-6 -top-8 rounded-2xl border border-white/10 bg-white/[0.07] px-5 py-4 backdrop-blur-md">
+            <p className="font-display text-lg font-bold leading-snug text-accent-400">
+              More satisfied principal and clients.
+              <br />
+              <span className="block pl-16 sm:pl-24">...and counting.</span>
             </p>
-            <p className="text-xs text-white/60"> </p>
           </div>
           <div className="absolute -bottom-4 right-2 rounded-2xl border border-white/10 bg-white/[0.07] px-5 py-4 backdrop-blur-md">
             <p className="font-display text-lg font-bold text-accent-400">
