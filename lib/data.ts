@@ -350,7 +350,7 @@ export const contactInfo = {
   mobile: "0917-565-6780",
   /* Facebook page — replace "YourPageName" with the page username
      (the part after facebook.com/). Both links update automatically. */
-  facebook: "https://www.facebook.com/YourPageName",
+  facebook: "https://www.facebook.com/share/1H8GJ7yYvc/",
   messenger: "https://m.me/YourPageName",
   hours: [
     { days: "Monday – Saturday", time: "7:00 AM – 6:00 PM" },

@@ -57,7 +57,7 @@ export default function Coverage() {
             <Reveal direction="left" delay={0.1}>
               <h3 className="flex items-center gap-2 font-display text-lg font-bold text-navy-900">
                 <CheckCircle2 className="h-5 w-5 text-accent-500" aria-hidden="true" />
-                29 service areas — municipalities, cities & islands
+                {serviceAreas.length} service areas — municipalities, cities & islands
               </h3>
               <div className="mt-5 flex flex-wrap gap-2">
                 {serviceAreas.map((area) => (
