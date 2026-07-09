@@ -9,6 +9,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 88px;
+  /* Bumps every rem-based font-size and spacing value site-wide (~12.5%) */
+  font-size: 112.5%;
 }
 
 /* Prevent any decorative element from causing sideways scroll on mobile */
