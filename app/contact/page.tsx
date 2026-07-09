@@ -130,13 +130,6 @@ export default function ContactPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <p className="px-3 py-3 text-xs text-navy-600/60">
-                Map centered on Puerto Princesa City — update the address in{" "}
-                <code className="rounded bg-mist px-1.5 py-0.5">
-                  lib/data.ts
-                </code>{" "}
-                once the exact office location is final.
-              </p>
             </div>
           </Reveal>
         </div>
