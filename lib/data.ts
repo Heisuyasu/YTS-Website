@@ -117,9 +117,6 @@ export const whyChooseUs = [
 /* Statistics                                                          */
 /* ------------------------------------------------------------------ */
 export const stats = [
-  { value: 6, suffix: "", label: "Business partners served" },
-  { value: 20, suffix: "+", label: "Trucks in fleet" },
-  { value: 5000, suffix: "+", label: "Tons of cargo moved" },
   { value: 24, suffix: "/7", label: "Dispatch & support" },
 ];
 

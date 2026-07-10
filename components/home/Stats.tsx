@@ -54,18 +54,13 @@ export default function Stats() {
         aria-hidden="true"
         className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(47,105,187,0.25),transparent_65%)]"
       />
-      <div className="container-x relative grid gap-10 text-center sm:grid-cols-2 lg:grid-cols-4">
-        {stats.map((s, i) => (
-          <div
-            key={s.label}
-            className={`relative ${
-              i > 0 ? "sm:before:absolute sm:before:-left-5 sm:before:top-1/2 sm:before:h-10 sm:before:w-px sm:before:-translate-y-1/2 sm:before:bg-white/10 lg:before:block" : ""
-            }`}
-          >
-            <p className="font-display text-2xl font-extrabold text-white sm:text-3xl">
+      <div className="container-x relative flex justify-center text-center">
+        {stats.map((s) => (
+          <div key={s.label}>
+            <p className="font-display text-5xl font-extrabold text-white sm:text-6xl lg:text-7xl">
               <Counter value={s.value} suffix={s.suffix} />
             </p>
-            <p className="mt-2 text-sm font-medium text-white/60">{s.label}</p>
+            <p className="mt-3 text-base font-medium text-white/60 sm:text-lg">{s.label}</p>
           </div>
         ))}
       </div>
