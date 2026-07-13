@@ -345,10 +345,8 @@ export const contactInfo = {
   location: "Abueg Road Barangay Bancao-Bancao, Puerto Princesa City, Palawan, Philippines",
   email: "y888osia@gmail.com",
   mobile: "0917-565-6780",
-  /* Facebook page — replace "YourPageName" with the page username
-     (the part after facebook.com/). Both links update automatically. */
   facebook: "https://www.facebook.com/share/1H8GJ7yYvc/",
-  messenger: "https://m.me/YourPageName",
+  messenger: "https://m.me/61587981119810",
   hours: [
     { days: "Monday – Saturday", time: "7:00 AM – 6:00 PM" },
     { days: "Sunday & Holidays", time: "By appointment" },
