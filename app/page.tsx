@@ -3,7 +3,7 @@ import Hero from "@/components/home/Hero";
 import Coverage from "@/components/home/Coverage";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import Stats from "@/components/home/Stats";
-import Fleet from "@/components/home/Fleet";
+import FleetPreview from "@/components/home/FleetPreview";
 import Process from "@/components/home/Process";
 import Testimonials from "@/components/home/Testimonials";
 import FAQ from "@/components/home/FAQ";
@@ -24,7 +24,7 @@ export default function HomePage() {
       <Coverage />
       <WhyChooseUs />
       <Stats />
-      <Fleet />
+      <FleetPreview />
       <RouteDivider tone="light" />
       <Process />
       <Testimonials />

@@ -5,7 +5,7 @@ import { CheckCircle2 } from "lucide-react";
 import PalawanMap from "./PalawanMap";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { coverageHighlights, serviceAreas } from "@/lib/data";
+import { serviceAreas } from "@/lib/data";
 
 export default function Coverage() {
   const [active, setActive] = useState<string | null>(null);
@@ -31,30 +31,9 @@ export default function Coverage() {
             </p>
           </Reveal>
 
-          {/* Highlights + area list */}
+          {/* Area list */}
           <div className="space-y-10">
             <Reveal direction="left">
-              <h3 className="font-display text-lg font-bold text-navy-900">
-                What we move, province-wide
-              </h3>
-              <ul className="mt-6 grid gap-4 sm:grid-cols-2">
-                {coverageHighlights.map(({ icon: Icon, label }) => (
-                  <li
-                    key={label}
-                    className="flex items-center gap-3 rounded-2xl border border-navy-900/5 bg-white px-4 py-3.5 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift"
-                  >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-accent-500/10 text-accent-600">
-                      <Icon className="h-[18px] w-[18px]" aria-hidden="true" />
-                    </span>
-                    <span className="text-sm font-semibold text-navy-800">
-                      {label}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-
-            <Reveal direction="left" delay={0.1}>
               <h3 className="flex items-center gap-2 font-display text-lg font-bold text-navy-900">
                 <CheckCircle2 className="h-5 w-5 text-accent-500" aria-hidden="true" />
                 {serviceAreas.length} service areas across municipalities, cities & islands
