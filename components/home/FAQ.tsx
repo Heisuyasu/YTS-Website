@@ -16,7 +16,7 @@ export default function FAQ() {
         <SectionHeading
           eyebrow="FAQ"
           title="Frequently Asked Questions"
-          lead="Quick answers about coverage, cargo, and booking. Can't find yours? Reach out — we're happy to help."
+          lead="Quick answers about coverage, cargo, and booking. Can't find yours? Reach out and we're happy to help."
         />
 
         <div className="mt-14 space-y-4">

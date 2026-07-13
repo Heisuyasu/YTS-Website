@@ -9,7 +9,7 @@ import { values } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about YVES Trucking Services — our story, vision, mission, and the values behind reliable cargo transportation across Palawan.",
+    "Learn about YVES Trucking Services: our story, vision, mission, and the values behind reliable cargo transportation across Palawan.",
 };
 
 export default function AboutPage() {
@@ -38,7 +38,7 @@ export default function AboutPage() {
                 mean unpredictable deliveries.
               </p>
               <p>
-                Today, our trucks travel the full length of the province — the
+                Today, our trucks travel the full length of the province: the
                 national highway from Bataraza to El Nido, the coastal roads to
                 San Vicente and Roxas, and connecting routes to the island
                 municipalities of Cuyo, Agutaya, Magsaysay and Balabac Island.
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 </h3>
                 <p className="mt-2.5 leading-relaxed text-navy-600/90">
                   To be the most trusted LOGISTICS
-                  provider in Palawan — the first name businesses call when
+                  provider in Palawan, the first name businesses call when
                   something important needs to move, anywhere in the province.
                 </p>
               </article>

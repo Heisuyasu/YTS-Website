@@ -84,7 +84,7 @@ export const whyChooseUs = [
   {
     icon: PackageCheck,
     title: "Reliable Deliveries",
-    body: "Every shipment is tracked from dispatch to drop-off, so your cargo arrives exactly as planned — every single time.",
+    body: "Every shipment is tracked from dispatch to drop-off, so your cargo arrives exactly as planned, every single time.",
   },
   {
     icon: Users,
@@ -104,7 +104,7 @@ export const whyChooseUs = [
   {
     icon: Clock,
     title: "On-Time Delivery",
-    body: "Optimized routing and disciplined scheduling mean your cargo moves on your timeline — not ours.",
+    body: "Optimized routing and disciplined scheduling mean your cargo moves on your timeline, not ours.",
   },
   {
     icon: HeartHandshake,
@@ -147,7 +147,7 @@ export const fleet: FleetItem[] = [
   },
   {
     title: "6W Reefer Truck",
-    body: "Ready to serve refrigerated or chilled cargo — temperature-controlled hauling for seafood, meat, produce, dairy, and other perishables anywhere in the province.",
+    body: "Ready to serve refrigerated or chilled cargo with temperature-controlled hauling for seafood, meat, produce, dairy, and other perishables anywhere in the province.",
     tag: "Refrigerated / Chilled",
     image: "/6w-truck.png",
   },
@@ -159,7 +159,7 @@ export const fleet: FleetItem[] = [
   },
   {
     title: "Tractor Head",
-    body: "Prime movers with 20-footer and 40-footer chassis for containerized cargo — straight from the port to any point in Palawan.",
+    body: "Prime movers with 20-footer and 40-footer chassis for containerized cargo, straight from the port to any point in Palawan.",
     tag: "20 ft & 40 ft chassis",
     image: "/tractorhead.png",
   },
@@ -171,13 +171,13 @@ export const fleet: FleetItem[] = [
   },
   {
     title: "Heavy Duty Mobile Cranes",
-    body: "80-ton capacity mobile cranes for major lifts — machinery, structural steel, containers, and project cargo, operated by trained and certified crews.",
+    body: "80-ton capacity mobile cranes for major lifts such as machinery, structural steel, containers, and project cargo, operated by trained and certified crews.",
     tag: "80 t capacity",
     image: "/crane.png",
   },
   {
     title: "Boom Trucks",
-    body: "5 and 10 ton boom trucks for lift-and-shift jobs — equipment installation, utility work, and deliveries that need on-board lifting power.",
+    body: "5 and 10 ton boom trucks for lift-and-shift jobs such as equipment installation, utility work, and deliveries that need on-board lifting power.",
     tag: "5 t & 10 t capacity",
     image: "/boom.png",
   },
@@ -263,7 +263,7 @@ export const testimonials = [
 export const faqs = [
   {
     q: "Which areas in Palawan do you serve?",
-    a: "We operate across the entire province — all municipalities from Balabac in the south to Busuanga in the north, including Puerto Princesa City, El Nido, Coron, Brooke's Point, and the island municipalities via connecting transport arrangements.",
+    a: "We operate across the entire province, covering all municipalities from Balabac in the south to Busuanga in the north, including Puerto Princesa City, El Nido, Coron, Brooke's Point, and the island municipalities via connecting transport arrangements.",
   },
   {
     q: "What types of cargo do you transport?",
@@ -294,7 +294,7 @@ export const values = [
   {
     icon: Handshake,
     title: "Integrity",
-    body: "We quote honestly, bill transparently, and do exactly what we commit to — no surprises.",
+    body: "We quote honestly, bill transparently, and do exactly what we commit to, with no surprises.",
   },
   {
     icon: ShieldCheck,
@@ -324,7 +324,7 @@ export const values = [
   {
     icon: Lightbulb,
     title: "Innovation",
-    body: "We keep improving — better routing, better tracking, better ways to serve.",
+    body: "We keep improving through better routing, better tracking, and better ways to serve.",
   },
 ];
 

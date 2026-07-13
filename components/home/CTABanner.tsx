@@ -26,7 +26,7 @@ export default function CTABanner() {
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-white/70">
                 Tell us what you're shipping and where it's headed. We'll send a
-                clear quotation within the day — no obligations.
+                clear quotation within the day. No obligations.
               </p>
               <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
                 <Link href="/contact" className="btn-primary">

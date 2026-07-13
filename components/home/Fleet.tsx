@@ -10,7 +10,7 @@ export default function Fleet() {
         <SectionHeading
           eyebrow="Our Fleet"
           title="The Right Truck for Every Cargo"
-          lead="A maintained, road-ready fleet matched to the load — whether it's a Less truck load (LTL) or Full Truck Load (FTL).
+          lead="A maintained, road-ready fleet matched to the load, whether it's a Less Truck Load (LTL) or Full Truck Load (FTL).
           Equiped with GPS, LTFRB Compliant, PTO Pass, And PhilGEPS Accredited."
         />
 

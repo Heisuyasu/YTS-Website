@@ -14,7 +14,7 @@ import { contactInfo } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get a trucking quote from YVES Trucking Services. Contact our Palawan team by phone, email, or the form — we respond within one business day.",
+    "Get a trucking quote from YVES Trucking Services. Contact our Palawan team by phone, email, or the form, and we respond within one business day.",
 };
 
 type InfoItem = {

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | YVES Trucking Services",
   },
   description:
-    "YVES Trucking Services provides reliable trucking and cargo transportation across the entire province of Palawan, Philippines — from Puerto Princesa to El Nido, Coron, Brooke's Point, and beyond.",
+    "YVES Trucking Services provides reliable trucking and cargo transportation across the entire province of Palawan, Philippines, from Puerto Princesa to El Nido, Coron, Brooke's Point, and beyond.",
   keywords: [
     "trucking Palawan",
     "cargo transport Palawan",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "YVES Trucking Services — Reliable trucking across Palawan",
+        alt: "YVES Trucking Services | Reliable trucking across Palawan",
       },
     ],
   },
