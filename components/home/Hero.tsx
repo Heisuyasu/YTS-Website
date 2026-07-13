@@ -189,25 +189,25 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.35, duration: 0.9, ease: [0.21, 0.6, 0.35, 1] }}
           style={reduce ? undefined : { y: parallaxY }}
-          className="relative hidden lg:block"
+          className="relative mx-auto mt-16 w-full max-w-sm px-6 sm:max-w-md lg:mx-0 lg:mt-0 lg:max-w-none lg:px-0"
           aria-hidden="true"
         >
           <div className="animate-float-y">
             <TruckIllustration />
           </div>
           {/* Floating badge cards */}
-          <div className="absolute -left-6 -top-8 rounded-2xl border border-white/10 bg-white/[0.07] px-5 py-4 backdrop-blur-md">
-            <p className="font-display text-lg font-bold leading-snug text-accent-400">
+          <div className="absolute -left-1 -top-6 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 backdrop-blur-md sm:-left-2 lg:-left-6 lg:-top-8 lg:rounded-2xl lg:px-5 lg:py-4">
+            <p className="font-display text-xs font-bold leading-snug text-accent-400 sm:text-sm lg:text-lg">
               More satisfied principal and clients.
               <br />
-              <span className="block pl-16 sm:pl-24">...and counting.</span>
+              <span className="block pl-8 sm:pl-12 lg:pl-16 xl:pl-24">...and counting.</span>
             </p>
           </div>
-          <div className="absolute -bottom-4 right-2 rounded-2xl border border-white/10 bg-white/[0.07] px-5 py-4 backdrop-blur-md">
-            <p className="font-display text-lg font-bold text-accent-400">
+          <div className="absolute -bottom-4 right-4 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 backdrop-blur-md sm:right-6 lg:right-2 lg:rounded-2xl lg:px-5 lg:py-4">
+            <p className="font-display text-base font-bold text-accent-400 lg:text-lg">
               24/7
             </p>
-            <p className="text-xs text-white/60">Dispatch & support</p>
+            <p className="text-[10px] text-white/60 lg:text-xs">Dispatch & support</p>
           </div>
         </motion.div>
       </div>
