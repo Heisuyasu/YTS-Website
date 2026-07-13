@@ -338,7 +338,7 @@ export const siteUrl = "https://yvestrucking.example.com";
 /* Formspree form ID — create a free form at https://formspree.io,
    then paste the ID here (it looks like "xkgwqjzr"). While this is
    still the placeholder, the form runs in demo mode. */
-export const formspreeId = "mzdnbbvp";
+export const formspreeId: string = "mzdnbbvp";
 
 export const contactInfo = {
   company: "YVES TRUCKING SERVICES",
