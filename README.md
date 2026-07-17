@@ -1,63 +1,118 @@
-# YVES Trucking Services — Corporate Website
+<div align="center">
 
-Modern corporate website for **YVES TRUCKING SERVICES**, a trucking and cargo
-transportation company serving the entire province of Palawan, Philippines.
+<img src="public/logo.png" alt="YVES Trucking Services logo" width="110" />
 
-## Tech Stack
+# YVES Trucking Services
 
-- **Next.js 14** (App Router) + **React 18** + **TypeScript**
-- **Tailwind CSS** — custom navy/orange brand palette
-- **Framer Motion** — scroll reveals, micro-interactions
-- **Lucide Icons**
-- Fonts: **Poppins** (display) + **Manrope** (body) via `next/font`
+**Reliable trucking & cargo transportation across the entire province of Palawan, Philippines** 🇵🇭
 
-## Getting Started
+*From Puerto Princesa to El Nido, Coron to Balabac — 29 service areas, one trusted team.*
+
+<br/>
+
+![Next.js](https://img.shields.io/badge/Next.js_14-0A162B?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_18-0A162B?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-0A162B?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0A162B?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-F5569B?style=for-the-badge&logo=framer&logoColor=white)
+
+</div>
+
+---
+
+## ✨ Highlights
+
+| | Feature |
+|---|---|
+| 🗺️ | **Interactive Palawan coverage map** — original SVG with 29 pulsing markers, tooltips, and route lines |
+| 🚛 | **Full fleet showcase** — 9 unit types with photos, from closed vans to 80-ton mobile cranes |
+| 📱 | **Mobile-first & fully responsive** — hamburger nav, adaptive timeline, tap-friendly map |
+| 🎬 | **Smooth animations** — page transitions, scroll reveals, animated counters, testimonial marquee |
+| 📨 | **Working quote form** — route planner with pickup/destination dropdowns, wired to Formspree |
+| 💬 | **Quick contact** — floating Messenger chat + tap-to-call buttons |
+| 🔍 | **SEO-ready** — sitemap, robots.txt, Open Graph share card, LocalBusiness structured data |
+
+---
+
+## 🚀 Getting Started
 
 ```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build
+npm install     # install dependencies
+npm run dev     # start dev server → http://localhost:3000
+npm run build   # production build
 ```
 
-Requires Node.js 18.17+.
+> Requires **Node.js 18.17+**
 
-## Structure
+---
+
+## 📄 Pages
+
+| Route | Description |
+|-------|-------------|
+| `/` | Hero, coverage map, why choose us, stats, fleet preview, process, testimonials, FAQ |
+| `/services` | Full services list + all 9 fleet units |
+| `/about` | Company overview, vision, mission, corporate values |
+| `/contact` | Business info, quote form, embedded Google Map |
+
+---
+
+## 🗂️ Project Structure
 
 ```
 app/
-  layout.tsx        # Root layout, fonts, metadata, nav/footer
-  page.tsx          # Home
-  about/page.tsx    # About Us
-  contact/page.tsx  # Contact Us
+├── layout.tsx          # Fonts, metadata, navbar/footer shell
+├── page.tsx            # 🏠 Home
+├── services/           # 🚛 Services & Fleet
+├── about/              # 🏢 About Us
+├── contact/            # 📞 Contact Us
+├── sitemap.ts          # SEO sitemap
+└── robots.ts           # SEO robots
+
 components/
-  layout/           # Navbar, Footer, ScrollProgress, BackToTop
-  home/             # Hero, Coverage (Palawan map), WhyChooseUs, Stats,
-                    # Fleet, Process, Testimonials, FAQ, CTABanner
-  contact/          # ContactForm
-  ui/               # Logo, Reveal, SectionHeading, PageHeader
+├── home/               # Hero, Coverage map, Fleet, FAQ, Stats…
+├── layout/             # Navbar, Footer, FloatingCall, BackToTop
+├── contact/            # Quote form
+├── seo/                # LocalBusiness structured data
+└── ui/                 # Logo, Reveal, PageHeader, RouteDivider
+
 lib/
-  data.ts           # ALL site content: service areas, values, FAQs,
-                    # contact details — edit here to update the site
+└── data.ts             # ⭐ ALL site content lives here
 ```
 
-## Editing Content
+---
 
-Almost all copy lives in **`lib/data.ts`**:
+## ✏️ Editing Content
 
-- **Contact details** (address, email, phone, office hours, Google Maps embed)
-  → `contactInfo`
-- **Service areas / map markers** → `serviceAreas` (x/y are SVG coordinates)
-- FAQs, values, fleet, testimonials, stats → corresponding exports
+Nearly everything editable lives in **`lib/data.ts`** — one file, no code hunting:
 
-## Contact Form
+| What | Where in `data.ts` |
+|------|--------------------|
+| 📍 Address, email, mobile, office hours | `contactInfo` |
+| 🌐 Live site URL (sitemap, share links) | `siteUrl` |
+| 📨 Formspree form ID (makes the form live) | `formspreeId` |
+| 💬 Facebook / Messenger links | `contactInfo.facebook` / `.messenger` |
+| 🗺️ Service areas & map markers | `serviceAreas` |
+| 🚛 Fleet units, tags, photos | `fleet` |
+| ❓ FAQs, values, testimonials, stats | corresponding exports |
 
-The form currently simulates submission. To make it live, create an API route
-(e.g. `app/api/contact/route.ts`) using Resend/Nodemailer, or point the form at
-Formspree/EmailJS — see the comment in `components/contact/ContactForm.tsx`.
+**Fleet photos** go in `public/` and are referenced like `image: "/6w-truck.png"`.
 
-## Notes
+---
 
-- The Palawan coverage map is an original, stylized SVG (not to scale) with
-  marker positions derived from real municipal coordinates.
-- The Google Map on the Contact page is a keyless embed; replace the `q`
-  parameter in `contactInfo.mapEmbedSrc` with the exact office address.
+## 🔧 Go-Live Checklist
+
+- [ ] Create a free form at [formspree.io](https://formspree.io) → paste ID into `formspreeId`
+- [ ] Replace `YourPageName` in `contactInfo.facebook` / `.messenger`
+- [ ] Set `siteUrl` to the live domain
+- [ ] Submit `sitemap.xml` in [Google Search Console](https://search.google.com/search-console)
+
+---
+
+<div align="center">
+
+**Built with ❤️ for Palawan's businesses**
+
+*Safe cargo. On time. Every time.* 🚛💨
+
+</div>
