@@ -96,8 +96,25 @@ function createScene(THREE: any, container: HTMLDivElement): () => void {
   const scene = new THREE.Scene();
 
   const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
-  camera.position.set(6.2, 4.1, 9.9);
-  camera.lookAt(0, 2.1, 0);
+
+  /* Frame the camera so the WHOLE truck always fits — on narrow
+     (mobile) screens the horizontal view shrinks, so pull the camera
+     back until the rig fits, and aim lower so it sits higher in frame */
+  const camDir = new THREE.Vector3(6.2, 4.1, 9.9).normalize();
+  function frameCamera(w: number, h: number) {
+    const aspect = w / Math.max(h, 1);
+    camera.aspect = aspect;
+    const vHalf = (camera.fov * Math.PI) / 360;
+    const hHalf = Math.atan(Math.tan(vHalf) * aspect);
+    const halfTruck = 6.8; /* half the rig's length + margin */
+    const distForWidth = halfTruck / Math.tan(hHalf);
+    const dist = Math.max(12.4, distForWidth * 1.05);
+    camera.position.copy(camDir.clone().multiplyScalar(dist));
+    const lookY = aspect < 1.25 ? 1.0 : 2.1;
+    camera.lookAt(-1.15, lookY, 0);
+    camera.updateProjectionMatrix();
+  }
+  frameCamera(width, height);
 
   /* Lighting */
   scene.add(new THREE.HemisphereLight(0xffffff, 0x16305c, 1.0));
@@ -419,8 +436,7 @@ function createScene(THREE: any, container: HTMLDivElement): () => void {
   function onResize() {
     const w = container.clientWidth || width;
     const h = container.clientHeight || height;
-    camera.aspect = w / h;
-    camera.updateProjectionMatrix();
+    frameCamera(w, h);
     renderer.setSize(w, h);
   }
   window.addEventListener("resize", onResize);

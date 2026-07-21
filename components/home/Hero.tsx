@@ -195,14 +195,14 @@ export default function Hero() {
         >
           <TruckScene />
           {/* Floating badge cards */}
-          <div className="absolute -left-1 -top-6 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 backdrop-blur-md sm:-left-2 lg:-left-6 lg:-top-8 lg:rounded-2xl lg:px-5 lg:py-4">
+          <div className="absolute -left-1 -top-16 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 backdrop-blur-md sm:-left-2 sm:-top-6 lg:-left-6 lg:-top-8 lg:rounded-2xl lg:px-5 lg:py-4">
             <p className="font-display text-xs font-bold leading-snug text-accent-400 sm:text-sm lg:text-lg">
               More satisfied principal and clients.
               <br />
               <span className="block pl-8 sm:pl-12 lg:pl-16 xl:pl-24">...and counting.</span>
             </p>
           </div>
-          <div className="absolute -bottom-4 right-4 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 backdrop-blur-md sm:right-6 lg:right-2 lg:rounded-2xl lg:px-5 lg:py-4">
+          <div className="absolute bottom-14 right-4 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 backdrop-blur-md sm:-bottom-4 sm:right-6 lg:right-2 lg:rounded-2xl lg:px-5 lg:py-4">
             <p className="font-display text-base font-bold text-accent-400 lg:text-lg">
               24/7
             </p>
