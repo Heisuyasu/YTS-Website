@@ -17,6 +17,7 @@ import {
   ShieldCheck,
   Warehouse,
 } from "lucide-react";
+import TruckScene from "./TruckScene";
 
 const trustChips = [
   { icon: ShieldCheck, label: "Safe cargo handling" },
@@ -143,7 +144,7 @@ export default function Hero() {
             LOGISTICS in an Island province,
             reliable trucking and cargo handler,
             safe, on time, every time.
-            
+
           </motion.p>
 
           <motion.div
@@ -183,7 +184,7 @@ export default function Hero() {
           </ul>
         </div>
 
-        {/* Truck illustration */}
+        {/* 3D truck scene (WebGL) */}
         <motion.div
           initial={reduce ? false : { opacity: 0, x: 48 }}
           animate={{ opacity: 1, x: 0 }}
@@ -192,9 +193,7 @@ export default function Hero() {
           className="relative mx-auto mt-16 w-full max-w-sm px-6 sm:max-w-md lg:mx-0 lg:mt-0 lg:max-w-none lg:px-0"
           aria-hidden="true"
         >
-          <div className="animate-float-y">
-            <TruckIllustration />
-          </div>
+          <TruckScene />
           {/* Floating badge cards */}
           <div className="absolute -left-1 -top-6 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 backdrop-blur-md sm:-left-2 lg:-left-6 lg:-top-8 lg:rounded-2xl lg:px-5 lg:py-4">
             <p className="font-display text-xs font-bold leading-snug text-accent-400 sm:text-sm lg:text-lg">
@@ -218,88 +217,5 @@ export default function Hero() {
         className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-white"
       />
     </section>
-  );
-}
-
-/* Flat-style side-view truck, original artwork */
-function TruckIllustration() {
-  return (
-    <svg viewBox="0 0 640 360" className="w-full drop-shadow-2xl" fill="none">
-      {/* Ground line */}
-      <line
-        x1="20"
-        y1="312"
-        x2="620"
-        y2="312"
-        stroke="rgba(255,255,255,0.25)"
-        strokeWidth="2"
-        strokeDasharray="14 12"
-      />
-      {/* Trailer */}
-      <rect x="60" y="96" width="340" height="160" rx="14" fill="#F4F7FB" />
-      <rect x="60" y="96" width="340" height="160" rx="14" stroke="#1355B2" strokeWidth="3" />
-      <rect x="60" y="196" width="340" height="10" fill="#F5569B" opacity="0.9" />
-      {/* Trailer branding */}
-      <text
-        x="94"
-        y="164"
-        fontFamily="Poppins, sans-serif"
-        fontWeight="800"
-        fontSize="44"
-        fill="#0B3167"
-        letterSpacing="2"
-      >
-        YVES
-      </text>
-      <text
-        x="96"
-        y="188"
-        fontFamily="Poppins, sans-serif"
-        fontWeight="600"
-        fontSize="13"
-        fill="#1355B2"
-        letterSpacing="4"
-      >
-        TRUCKING SERVICES
-      </text>
-      {/* Trailer chassis */}
-      <rect x="60" y="256" width="340" height="14" rx="4" fill="#0E4187" />
-      {/* Cab */}
-      <path
-        d="M412 256 V150 a14 14 0 0 1 14-14 h70 a16 16 0 0 1 13 7l34 50 a20 20 0 0 1 4 12 v51 z"
-        fill="#1355B2"
-      />
-      <path
-        d="M412 256 V150 a14 14 0 0 1 14-14 h70 a16 16 0 0 1 13 7l34 50 a20 20 0 0 1 4 12 v51 z"
-        stroke="#0B3167"
-        strokeWidth="3"
-      />
-      {/* Window */}
-      <path
-        d="M438 158 a8 8 0 0 1 8-8 h44 a10 10 0 0 1 8 4.5 L524 192 h-86 z"
-        fill="#FFCBEB"
-      />
-      {/* Cab accent stripe */}
-      <rect x="412" y="226" width="135" height="12" fill="#F5569B" />
-      {/* Bumper + light */}
-      <rect x="540" y="244" width="14" height="26" rx="4" fill="#0B3167" />
-      <rect x="544" y="214" width="8" height="16" rx="3" fill="#FAB3D2" />
-      {/* Exhaust */}
-      <rect x="404" y="120" width="8" height="136" rx="3" fill="#0B3167" />
-      {/* Wheels */}
-      {[120, 190, 470].map((cx) => (
-        <g key={cx}>
-          <circle cx={cx} cy="288" r="26" fill="#082247" />
-          <circle cx={cx} cy="288" r="12" fill="#F4F7FB" />
-          <circle cx={cx} cy="288" r="4" fill="#082247" />
-        </g>
-      ))}
-      {/* Motion lines */}
-      <g stroke="#F5569B" strokeWidth="4" strokeLinecap="round" opacity="0.7">
-        <line x1="10" y1="150" x2="44" y2="150" />
-        <line x1="0" y1="180" x2="40" y2="180" />
-        <line x1="16" y1="210" x2="44" y2="210" />
-      </g>
-    </svg>
   );
 }
