@@ -13,10 +13,8 @@ export default function Footer() {
         <div className="space-y-4">
           <Logo light />
           <p className="max-w-xs text-sm leading-relaxed text-white/60">
-            LOGISTICS in an Island province,
-            Reliable trucking and cargo handler,
-            Safe, on time, every time.
-
+            Reliable island-wide logistics for Palawan — trusted trucking and
+            cargo handling that&apos;s safe, on time, every time.
           </p>
           <div className="flex gap-3 pt-1">
             {[

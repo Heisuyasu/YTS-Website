@@ -111,7 +111,7 @@ export default function Hero() {
             initial={reduce ? false : "hidden"}
             animate="show"
             custom={1}
-            className="mt-6 font-display text-2xl font-extrabold leading-[1.15] tracking-tight sm:text-3xl lg:text-4xl"
+            className="mt-6 font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl"
           >
             Reliable Logistics Services{" "}
             <span className="relative text-accent-400 sm:whitespace-nowrap">
@@ -141,10 +141,8 @@ export default function Hero() {
             custom={2}
             className="mt-7 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base"
           >
-            LOGISTICS in an Island province,
-            reliable trucking and cargo handler,
-            safe, on time, every time.
-
+            Reliable island-wide logistics for Palawan — trusted trucking and
+            cargo handling that&apos;s safe, on time, every time.
           </motion.p>
 
           <motion.div
@@ -197,7 +195,7 @@ export default function Hero() {
           {/* Floating badge cards */}
           <div className="absolute -left-1 -top-16 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 backdrop-blur-md sm:-left-2 sm:-top-6 lg:-left-6 lg:-top-8 lg:rounded-2xl lg:px-5 lg:py-4">
             <p className="font-display text-xs font-bold leading-snug text-accent-400 sm:text-sm lg:text-lg">
-              More satisfied principal and clients.
+              More satisfied principals and clients.
               <br />
               <span className="block pl-8 sm:pl-12 lg:pl-16 xl:pl-24">...and counting.</span>
             </p>

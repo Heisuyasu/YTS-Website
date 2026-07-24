@@ -89,7 +89,7 @@ export const whyChooseUs = [
   {
     icon: Users,
     title: "Experienced Drivers",
-    body: "Our professional drivers know Palawan's highways, coastal roads, and mountain passes better than anyone. Completed and equiped with proper training like, NC3 Defensive Driving, and Driving Safety Awareness. They handle your cargo with care and respect.",
+    body: "Our professional drivers know Palawan's highways, coastal roads, and mountain passes better than anyone. Each is trained and certified in NC3 Defensive Driving and Driving Safety Awareness, and they handle your cargo with care and respect.",
   },
   {
     icon: Map,
@@ -319,7 +319,7 @@ export const values = [
   {
     icon: Users,
     title: "Teamwork",
-    body: "Drivers, dispatchers, and coordinators work as one crew to move every shipment safely, ontime, everytime.",
+    body: "Drivers, dispatchers, and coordinators work as one crew to move every shipment safely, on time, every time.",
   },
   {
     icon: Lightbulb,
